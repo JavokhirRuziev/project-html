@@ -30,8 +30,11 @@
                 class="navbar navbar-expand-lg bg-transparent absolute top-0 z-10 w-100"
             >
                 <div class="container-fluid container p-0">
-                    <a class="navbar-brand" href="#"
-                        ><img src="/assets//icons/logo.svg" alt="logo"
+                    <a class="navbar-brand" href="/"
+                        ><img
+                            src="/assets//icons/logo.svg"
+                            alt="logo"
+                            class="w-[150px] h-[50px]"
                     /></a>
                     <button
                         class="navbar-toggler"
@@ -53,7 +56,7 @@
                                 <a
                                     class="nav-link active regular text-xs"
                                     aria-current="page"
-                                    href="#"
+                                    href="/pages/about-us.html"
                                 >
                                     О торговом центре
                                 </a>
@@ -125,109 +128,43 @@
             </nav>
         </header>
 
-        <section class="slider">
+        <section id="slider">
             <div class="swiper1 mySwiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div
-                            class="flex items-end justify-around px-12 container h-full"
-                        >
-                            <div class="w-80 mb-40">
-                                <h1 class="bold text-2xl">
-                                    С 10 июля по 5 сентября, приобретая магазин
-                                    в торговом центре «Ibn Sino Savdo Markazi»,
-                                    получите возможность выиграть BYD «Song».
-                                </h1>
-                                <div class="flex gap-2 mt-10">
-                                    <button
-                                        type="button"
-                                        class="btn bg-primary text-white"
-                                    >
-                                        Primary
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn bg-secondary text-white"
-                                    >
-                                        Secondary
-                                    </button>
-                                </div>
+                    <div class="swiper-slide relative">
+                        <div class="absolute top-0 bottom-0 left-0 right-0">
+                            <div class="relative w-full h-full">
+                                <div class="overlay"></div>
+                                <img
+                                    src="/assets/images/pavilion.jpg"
+                                    alt="slider-image"
+                                />
                             </div>
-                            <img
-                                src="/assets/images/slider-image1.png"
-                                class="w-36"
-                                alt="slide-1"
-                            />
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div
-                            class="flex items-end justify-around px-12 container h-full"
-                        >
-                            <div class="w-80 mb-40">
-                                <h1 class="bold text-2xl">
-                                    С 10 июля по 5 сентября, приобретая магазин
-                                    в торговом центре «Ibn Sino Savdo Markazi»,
-                                    получите возможность выиграть BYD «Song».
-                                </h1>
-                                <div class="flex gap-2 mt-10">
-                                    <button
-                                        type="button"
-                                        class="btn bg-primary text-white"
-                                    >
-                                        Primary
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn bg-secondary text-white"
-                                    >
-                                        Secondary
-                                    </button>
-                                </div>
+                    <div class="swiper-slide relative">
+                        <div class="absolute top-0 bottom-0 left-0 right-0">
+                            <div class="relative w-full h-full">
+                                <div class="overlay"></div>
+                                <img
+                                    src="/assets/images/pavilion.jpg"
+                                    alt="slider-image"
+                                />
                             </div>
-                            <img
-                                src="/assets/images/slider-image1.png"
-                                class="w-36"
-                                alt="slide-1"
-                            />
                         </div>
                     </div>
-                    <div class="swiper-slide">
-                        <div
-                            class="flex items-end justify-around px-12 container h-full"
-                        >
-                            <div class="w-80 mb-40">
-                                <h1 class="bold text-2xl">
-                                    С 10 июля по 5 сентября, приобретая магазин
-                                    в торговом центре «Ibn Sino Savdo Markazi»,
-                                    получите возможность выиграть BYD «Song».
-                                </h1>
-                                <div class="flex gap-2 mt-10">
-                                    <button
-                                        type="button"
-                                        class="btn bg-primary text-white"
-                                    >
-                                        Primary
-                                    </button>
-                                    <button
-                                        type="button"
-                                        class="btn bg-secondary text-white"
-                                    >
-                                        Secondary
-                                    </button>
-                                </div>
+                    <div class="swiper-slide relative">
+                        <div class="absolute top-0 bottom-0 left-0 right-0">
+                            <div class="relative w-full h-full">
+                                <div class="overlay"></div>
+                                <img
+                                    src="/assets/images/pavilion.jpg"
+                                    alt="slider-image"
+                                />
                             </div>
-                            <img
-                                src="/assets/images/slider-image1.png"
-                                class="w-36"
-                                alt="slide-1"
-                            />
                         </div>
                     </div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
             </div>
         </section>
 
@@ -456,7 +393,7 @@
         <section>
             <div class="container">
                 <div
-                    class="bg-primary h-48 px-16 rounded-2xl flex justify-between items-center overflow-hidden mb-10"
+                    class="h-48 px-16 rounded-2xl flex justify-between items-center overflow-hidden mb-10 background"
                 >
                     <div>
                         <h2 class="bold text-white mb-2">
@@ -469,13 +406,9 @@
                         </p>
                     </div>
                     <div class="relative">
-                        <img
-                            src="/assets/images/banner-image.png"
-                            alt="banner"
-                        />
                         <button
                             type="button"
-                            class="btn bg-white text-primary absolute bottom-10 left-1/2 transform -translate-x-1/2"
+                            class="btn bg-secondary text-white"
                         >
                             Подробнее
                         </button>
@@ -704,18 +637,6 @@
         <footer>
             <div class="background">
                 <div class="container">
-                    <h1 class="bold text-2xl mb-10">Наше расположение</h1>
-                    <div>
-                        <iframe
-                            src="https://yandex.ru/map-widget/v1/-/CDQqu2Zx"
-                            frameborder="0"
-                            title="Tashkent"
-                            allowfullscreen="true"
-                            aria-hidden="false"
-                            tabindex="0"
-                            class="max-w-6xl w-100 rounded-2xl h-96 mb-12"
-                        ></iframe>
-                    </div>
                     <div class="flex justify-between">
                         <div>
                             <p class="regular w-[160px]">
@@ -756,7 +677,7 @@
                         </div>
                         <div class="w-[160px] relative">
                             <div
-                                class="shadow-item absolute -left-[100px] -top-[105px]"
+                                class="shadow-item absolute -left-[50px] -top-[105px]"
                             >
                                 <p class="bold mb-[20px]">Обратная связь</p>
                                 <input
@@ -798,24 +719,16 @@
         <script type="module">
             import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-            const swiper2 = new Swiper('.swiper1', {
-                spaceBetween: 20,
+            const swiper1 = new Swiper('.swiper1', {
                 autoplay: {
-                    delay: 2500,
+                    delay: 2000,
                     disableOnInteraction: false,
                 },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
                 loop: true,
+                grabCursor: true,
             });
 
-            const swiper1 = new Swiper('.swiper2', {
+            const swiper2 = new Swiper('.swiper2', {
                 effect: 'coverflow',
                 grabCursor: true,
                 spaceBetween: 70,
@@ -836,6 +749,7 @@
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',
                 },
+                initialSlide: 1,
             });
         </script>
     </body>
