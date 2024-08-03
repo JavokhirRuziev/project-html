@@ -134,6 +134,12 @@
 /* containers wrappers */
 
 /* swiper */
+
+.swiper3 .swiper-wrapper {
+    transition-timing-function: linear !important;
+    transition-delay: 0ms !important;
+}
+
 .swiper1 {
     width: 100vw;
     height: 80vh;
@@ -195,10 +201,6 @@
     object-fit: contain;
 }
 
-/* .swiper2 .swiper-button-next {
-    right: 30%;
-} */
-
 /* swiper */
 
 /* button */
@@ -242,7 +244,7 @@
     height: 650px;
     border: none;
     left: 0;
-    right: 0;
+    right: 10;
     top: -100px;
     position: absolute;
     border-radius: 0px;

@@ -22,7 +22,7 @@
             rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
         />
-        <title>Document</title>
+        <title>about-us</title>
     </head>
     <body>
         <header>
@@ -62,12 +62,18 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link regular text-xs" href="#">
+                                <a
+                                    class="nav-link regular text-xs"
+                                    href="/pages/news.html"
+                                >
                                     Новости
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link regular text-xs" href="#">
+                                <a
+                                    class="nav-link regular text-xs"
+                                    href="/pages/contacts.html"
+                                >
                                     Контакты
                                 </a>
                             </li>
@@ -146,7 +152,7 @@
                                             id="video"
                                             src="/assets/videos/1622112212.mp4"
                                             controls
-                                            class="absolute top-0 bottom-0 right-0 left-0 w-full h-[650px] z-10 bg-primary z-[-1]"
+                                            class="absolute top-0 bottom-0 right-0 left-0 w-full h-[650px] bg-primary z-[-1]"
                                         ></video>
                                     </div>
                                     <div
@@ -425,7 +431,7 @@
                                     />
                                     <button
                                         type="button"
-                                        class="btn bg-primary text-white absolute bottom-[20px] left-[50%] -translate-x-1/2 w-[80%]"
+                                        class="btn bg-secondary text-white absolute bottom-[20px] left-[50%] -translate-x-1/2 w-[80%]"
                                     >
                                         Перейти
                                     </button>
@@ -611,13 +617,15 @@
 
             play.addEventListener('click', () => {
                 if (!videoContainer.classList.contains('video-overlay-play')) {
-                    video.play();
                     close.classList.remove('hidden');
                     videoContainer.classList.add('video-overlay-play');
                     video.style = 'z-index: 1000;';
-                    videoBorder.style = 'border: none;';
+                    videoBorder.style = 'border: none !important;';
                     tooltip.style = 'display: none;';
                     wrapper.style = 'left:0px;';
+                    setTimeout(() => {
+                        video.play();
+                    }, 1000);
                 }
             });
 
@@ -625,10 +633,12 @@
                 video.pause();
                 close.classList.add('hidden');
                 videoContainer.classList.remove('video-overlay-play');
-                tooltip.style = 'display: block;';
-                videoBorder.style = 'border: 2px dashed black;';
-                video.style = 'z-index: -1;';
                 wrapper.style = 'left:200px;';
+                setTimeout(() => {
+                    tooltip.style = 'display: block;';
+                    videoBorder.style = 'border: 2px dashed black;';
+                    video.style = 'z-index: -1;';
+                }, 900);
             });
         </script>
     </body>

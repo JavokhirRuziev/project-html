@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Figure" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 644.76 288.16">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 8px;
+      }
+
+      .cls-3, .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-1" points="384.35 54 316.41 0 248.47 54 248.47 150.35 384.35 150.35 384.35 54"/>
+  <polygon class="cls-2" points="374.61 60.15 316.41 12.71 258.21 59.15 258.21 150.35 374.61 150.35 374.61 60.15"/>
+  <rect class="cls-1" x="236.3" y="150.35" width="158.12" height="14.12"/>
+  <polygon class="cls-3" points="340.88 95.71 316.28 76.41 291.68 95.71 291.68 154.42 340.88 154.42 340.88 95.71"/>
+  <rect class="cls-1" x="245.99" y="75.44" width="140.29" height="12" transform="translate(397.57 -234.69) rotate(90)"/>
+</svg>
