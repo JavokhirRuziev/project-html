@@ -1,0 +1,215 @@
+:root {
+    /* Secondary */
+    --bs-secondary-color: #9e9e9e; /* Secondary text color */
+    --bs-secondary-color-rgb: 158, 158, 158; /* RGB value for secondary text color */
+    --bs-secondary-bg: #e2e3e5; /* Secondary background color */
+    --bs-secondary-bg-rgb: 226, 227, 229; /* RGB value for secondary background color */
+
+    /* Tertiary */
+    --bs-tertiary-color: #c8c8c8; /* Tertiary text color */
+    --bs-tertiary-color-rgb: 200, 200, 200; /* RGB value for tertiary text color */
+    --bs-tertiary-bg: #f5f5f5; /* Tertiary background color */
+    --bs-tertiary-bg-rgb: 245, 245, 245; /* RGB value for tertiary background color */
+
+    /* Emphasis */
+    --bs-emphasis-color: #495057; /* Emphasis text color */
+    --bs-emphasis-color-rgb: 73, 80, 87; /* RGB value for emphasis text color */
+
+    /* Border */
+    --bs-border-color: #dee2e6; /* Default border color */
+    --bs-border-color-rgb: 222, 226, 230; /* RGB value for default border color */
+
+    /* Primary */
+    --bs-primary: #a88f6c; /* Primary color */
+    --bs-primary-rgb: 168, 143, 108; /* RGB value for primary color */
+    --bs-primary-bg-subtle: #d0c3a9; /* Subtle background color for primary */
+    --bs-primary-border-subtle: #bfa984; /* Subtle border color for primary */
+    --bs-primary-text-emphasis: #6c5b47; /* Text emphasis color for primary */
+
+    /* Success */
+    --bs-success: #4caf50; /* Success color */
+    --bs-success-rgb: 76, 175, 80; /* RGB value for success color */
+    --bs-success-bg-subtle: #d1e7dd; /* Subtle background color for success */
+    --bs-success-border-subtle: #81c784; /* Subtle border color for success */
+    --bs-success-text-emphasis: #2c6b2f; /* Text emphasis color for success */
+
+    /* Danger */
+    --bs-danger: #f44336; /* Danger color */
+    --bs-danger-rgb: 244, 67, 54; /* RGB value for danger color */
+    --bs-danger-bg-subtle: #f8d7da; /* Subtle background color for danger */
+    --bs-danger-border-subtle: #f48fb1; /* Subtle border color for danger */
+    --bs-danger-text-emphasis: #58151c; /* Text emphasis color for danger */
+
+    /* Warning */
+    --bs-warning: #ffc107; /* Warning color */
+    --bs-warning-rgb: 255, 193, 7; /* RGB value for warning color */
+    --bs-warning-bg-subtle: #fff3cd; /* Subtle background color for warning */
+    --bs-warning-border-subtle: #ffe69c; /* Subtle border color for warning */
+    --bs-warning-text-emphasis: #664d03; /* Text emphasis color for warning */
+
+    /* Info */
+    --bs-info: #00bcd4; /* Info color */
+    --bs-info-rgb: 0, 188, 212; /* RGB value for info color */
+    --bs-info-bg-subtle: #cff4fc; /* Subtle background color for info */
+    --bs-info-border-subtle: #9eeaf9; /* Subtle border color for info */
+    --bs-info-text-emphasis: #055160; /* Text emphasis color for info */
+
+    /* Light */
+    --bs-light: #f1f1f1; /* Light color */
+    --bs-light-rgb: 241, 241, 241; /* RGB value for light color */
+    --bs-light-bg-subtle: #fcfcfd; /* Subtle background color for light */
+    --bs-light-border-subtle: #e9ecef; /* Subtle border color for light */
+    --bs-light-text-emphasis: #434343; /* Text emphasis color for light */
+
+    /* Dark */
+    --bs-dark: #212121; /* Dark color */
+    --bs-dark-rgb: 33, 33, 33; /* RGB value for dark color */
+    --bs-dark-bg-subtle: #ced4da; /* Subtle background color for dark */
+    --bs-dark-border-subtle: #adb5bd; /* Subtle border color for dark */
+    --bs-dark-text-emphasis: #434343; /* Text emphasis color for dark */
+
+    /* Additional */
+    --bs-white-rgb: 255, 255, 255; /* White color in RGB */
+    --bs-black-rgb: 0, 0, 0; /* Black color in RGB */
+    --bs-gradient: linear-gradient(
+        /* Gradient color */ 180deg,
+        rgba(255, 255, 255, 0.15),
+        rgba(255, 255, 255, 0)
+    );
+    --bg-custom: rgba(168, 143, 108, 0.15);
+    /* shadows */
+    --shadow-custom-primary: 0px 4px 40px rgba(0, 0, 0, 0.05);
+    --shadow-custom-secondary: 0px 4px 1rem rgba(0, 0, 0, 0.05);
+}
+
+/* items */
+.shadow-item-hover {
+    background: white;
+    border-radius: 16px;
+    padding: 16px 24px;
+    box-shadow: 0px 4px 1rem rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.shadow-item-hover:hover {
+    transform: translateY(-1rem);
+    box-shadow: 0px 60px 80px rgba(168, 143, 108, 0.07),
+        0px 22px 46.8519px rgba(0, 0, 0, 0.0531481),
+        0px 19px 25.4815px rgba(0, 0, 0, 0.0425185),
+        0px 20px 13px rgba(0, 0, 0, 0.035);
+}
+.shadow-item {
+    background: white;
+    border-radius: 16px;
+    padding: 16px 24px;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+/* items */
+
+/* containers wrappers */
+.container {
+    max-width: 1600px;
+    margin: auto;
+    padding: 50px 0px;
+}
+.background {
+    background: var(--bg-custom);
+}
+.bg-rounded {
+    background: var(--bs-light);
+    border-radius: 1000px;
+    padding: 10px 15px;
+}
+
+.bg-f5f5f5 {
+    background: var(--bs-tertiary-bg);
+    border-radius: 8px;
+    padding: 16px 24px;
+    width: fit-content;
+}
+/* containers wrappers */
+
+/* swiper */
+.swiper1 {
+    width: 100vw;
+    height: 70vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.swiper1 .swiper-slide img {
+    display: block;
+    width: 450px;
+    height: 450px;
+    object-fit: cover;
+}
+
+.swiper1 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(221, 221, 221, 1) 0%,
+        rgba(168, 143, 108, 0.15) 100%
+    );
+    user-select: none;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--bs-secondary-color) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--bs-secondary) !important;
+}
+
+.swiper2 {
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.swiper2 .swiper-slide {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    max-width: 690px;
+    max-height: 390px;
+}
+.swiper2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* .swiper2 .swiper-button-next {
+    right: 30%;
+} */
+
+/* swiper */
+
+/* button */
+.btn {
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 10px 30px;
+}
+/* button */
+
+.collapse {
+    visibility: visible !important;
+}
+
+/* inputs */
+.input-base {
+    background: #f8f8f8;
+    padding: 15px;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+.input-base:focus-visible {
+    border: none;
+}
+/* inputs */
