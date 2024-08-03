@@ -63,12 +63,6 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link regular text-xs" href="#">
-                                    Владельцам магазинов
-                                </a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link regular text-xs" href="#">
                                     Новости
                                 </a>
                             </li>
@@ -90,12 +84,12 @@
                         <ul>
                             <li class="nav-item dropdown">
                                 <button
-                                    class="nav-link dropdown-toggle regular text-xs btn bg-primary text-white"
+                                    class="nav-link dropdown-toggle regular text-xs btn bg-secondary text-white"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                     type="button"
                                 >
-                                    Dropdown
+                                    Language
                                 </button>
                                 <ul class="dropdown-menu dropdown-menu-end">
                                     <li>
@@ -147,18 +141,7 @@
                             <div class="relative w-full h-full">
                                 <div class="overlay"></div>
                                 <img
-                                    src="/assets/images/pavilion.jpg"
-                                    alt="slider-image"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide relative">
-                        <div class="absolute top-0 bottom-0 left-0 right-0">
-                            <div class="relative w-full h-full">
-                                <div class="overlay"></div>
-                                <img
-                                    src="/assets/images/pavilion.jpg"
+                                    src="/assets/images/slider-2.jpeg"
                                     alt="slider-image"
                                 />
                             </div>
@@ -726,6 +709,7 @@
                 },
                 loop: true,
                 grabCursor: true,
+                effect: 'fade',
             });
 
             const swiper2 = new Swiper('.swiper2', {

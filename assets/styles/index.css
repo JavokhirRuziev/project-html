@@ -142,9 +142,6 @@
 }
 
 .swiper1 .swiper-slide img {
-    background-image: url(/assets/images/pavilion.jpg);
-    background-size: cover;
-    background-position: center;
     z-index: -1;
     position: absolute;
     width: 100%;
@@ -166,7 +163,7 @@
     left: 0;
     right: 0;
     z-index: 1;
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .swiper-button-next,
