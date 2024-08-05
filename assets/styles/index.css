@@ -68,10 +68,8 @@
     --bs-dark-text-emphasis: #434343; /* Text emphasis color for dark */
 
     /* Additional */
-    --bs-white-rgb: 255, 255, 255; /* White color in RGB */
-    --bs-black-rgb: 0, 0, 0; /* Black color in RGB */
     --bs-gradient: linear-gradient(
-        /* Gradient color */ 180deg,
+        180deg,
         rgba(226, 226, 226, 0.15),
         rgba(226, 226, 226, 0)
     );
@@ -162,7 +160,14 @@
 }
 
 .overlay {
-    background: var(--bg-custom);
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 1) 0%,
+        rgba(255, 255, 255, 0) 25%,
+        rgba(255, 255, 255, 1) 50%,
+        rgba(0, 0, 0, 0) 75%,
+        rgba(168, 143, 108, 0.25) 100%
+    );
     position: absolute;
     top: 0;
     bottom: 0;
