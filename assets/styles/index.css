@@ -211,8 +211,8 @@
 }
 .swiper3 {
     overflow: hidden;
-    margin: 0px -50px;
-    padding: 0px 50px;
+    margin: -50px;
+    padding: 50px;
 }
 
 .mySwiper4 .swiper-slide {
