@@ -133,11 +133,6 @@
 
 /* swiper */
 
-.swiper3 .swiper-wrapper {
-    transition-timing-function: linear !important;
-    transition-delay: 0ms !important;
-}
-
 .swiper1 {
     width: 100vw;
     height: 80vh;
@@ -162,11 +157,11 @@
 .overlay {
     background: linear-gradient(
         180deg,
-        rgba(255, 255, 255, 1) 0%,
-        rgba(255, 255, 255, 0) 25%,
-        rgba(255, 255, 255, 1) 50%,
+        rgba(0, 0, 0, 1) 0%,
+        rgba(0, 0, 0, 0) 25%,
+        rgba(0, 0, 0, 1) 50%,
         rgba(0, 0, 0, 0) 75%,
-        rgba(168, 143, 108, 0.25) 100%
+        rgba(0, 0, 0, 0) 100%
     );
     position: absolute;
     top: 0;
@@ -204,6 +199,26 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+.swiper3 .swiper-wrapper {
+    transition-timing-function: linear !important;
+    transition-delay: 0ms !important;
+}
+
+.mySwiper4 .swiper-slide {
+    width: 400px;
+    height: 100px;
+    user-select: none;
+}
+.mySwiper5 .swiper-slide {
+    width: 100vw;
+    height: 70vh;
+    user-select: none;
+}
+.mySwiper5 .swiper-slide img {
+    width: 100%;
+    object-fit: cover;
 }
 
 /* swiper */
