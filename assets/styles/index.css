@@ -205,6 +205,15 @@
     transition-timing-function: linear !important;
     transition-delay: 0ms !important;
 }
+.swiper3 .mySwiper .swiper-slide {
+    width: 256px !important;
+    height: 132px !important;
+}
+.swiper3 {
+    overflow: hidden;
+    margin: 0px -50px;
+    padding: 0px 50px;
+}
 
 .mySwiper4 .swiper-slide {
     width: 400px;
