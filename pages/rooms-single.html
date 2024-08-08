@@ -69,9 +69,9 @@
                             <li class="nav-item">
                                 <a
                                     class="regular text-xs text-black"
-                                    href="/pages/rooms.html"
+                                    href="/pages/rooms-single.html"
                                 >
-                                    Комнаты
+                                    Етажы
                                 </a>
                             </li>
                             <li class="nav-item">
@@ -142,10 +142,8 @@
         </header>
 
         <section>
-            <div class="container my-20">
-                <h1 class="bold text-4xl mb-14 text-secondary">
-                    Комната 4/8 м²
-                </h1>
+            <div class="container my-40">
+                <h1 class="bold text-4xl mb-14 text-secondary">Етажы</h1>
                 <p class="medium mb-10">
                     ?Успейте приобрести магазин в нашем торговом центре и
                     выиграйте приз!
@@ -154,38 +152,20 @@
                     ⚡️ посетить офис продаж STROY MART;<br />
                     ⚡️ заключить договор о покупке магазина;<br />
                     ⚡️ получить шанс поучаствовать в лотерее <br />⚡️ выиграть
-                    один из 77 ценных призов!<br />
-                    STROY MART дарит: <br />✅iphone 13 Pro<br />
-                    ✅Apple iWatch <br />
-                    ✅ Телевизоры<br />
-                    ✅ Холодильники <br />✅ Сертификаты на покупку магазина на
-                    1, 5 и 10 млн. сум <br />✅ Сертификаты на горные курорты
-                    <br />✅ Сертификаты на посещение SPA-салона Чем больше
-                    магазинов вы приобретаете, тем выше шанс заполучить один из
-                    призов! Ваши шансы растут с каждой покупкой!<br />
-                    ?STROY MART дарит подарки круглый год! Ждем вас!
-                    <br />Вам обязательно повезет! <br />Подробности по
-                    телефону: ? (93) 840 88 88
                 </p>
                 <div class="swiper mySwiper5">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-1.JPG" />
+                            <img src="/assets/images/floor1.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-2.JPG" />
+                            <img src="/assets/images/floor2.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-3.JPG" />
+                            <img src="/assets/images/floor3.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-4.JPG" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assets/images/room-5.JPG" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assets/images/room-6.JPG" />
+                            <img src="/assets/images/floor4.png" />
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -194,29 +174,23 @@
                 <div thumbsSlider="" class="swiper mySwiper4 mt-10">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-1.JPG" />
+                            <img src="/assets/images/floor1.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-2.JPG" />
+                            <img src="/assets/images/floor2.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-3.JPG" />
+                            <img src="/assets/images/floor3.png" />
                         </div>
                         <div class="swiper-slide">
-                            <img src="/assets/images/room-4.JPG" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assets/images/room-5.JPG" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="/assets/images/room-6.JPG" />
+                            <img src="/assets/images/floor4.png" />
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <!-- <section>
             <div class="container mb-16">
                 <h1 class="bold text-4xl mb-14 text-secondary">
                     Другие комнаты
@@ -288,7 +262,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <footer>
             <div class="background">
@@ -338,12 +312,17 @@
                                 <p class="bold mb-[20px]">Обратная связь</p>
                                 <input
                                     type="text"
-                                    value="+998"
+                                    placeholder="Ваше имя"
                                     class="input-base"
                                 />
                                 <input
                                     type="text"
-                                    placeholder="Как вас зовут?"
+                                    placeholder="Ваш email"
+                                    class="input-base"
+                                />
+                                <input
+                                    type="text"
+                                    value="+998"
                                     class="input-base"
                                 />
                                 <button
@@ -384,7 +363,7 @@
             });
             const swiper2 = new Swiper('.mySwiper5', {
                 loop: true,
-                spaceBetween: 70,
+                spaceBetween: 100,
                 navigation: {
                     nextEl: '.swiper-button-next',
                     prevEl: '.swiper-button-prev',

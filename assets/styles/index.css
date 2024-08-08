@@ -215,10 +215,25 @@
     padding: 50px;
 }
 
+.mySwiper4 .swiper-wrapper {
+    margin: -50px 0px;
+    padding: 50px 0px;
+}
+
 .mySwiper4 .swiper-slide {
     width: 400px;
-    height: 100px;
+    height: 150px;
     user-select: none;
+    box-shadow: var(--shadow-custom-primary);
+}
+.mySwiper4 .swiper-slide img {
+    width: 400px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.mySwiper5 {
+    box-shadow: var(--shadow-custom-primary);
 }
 .mySwiper5 .swiper-slide {
     width: 100vw;
@@ -227,7 +242,8 @@
 }
 .mySwiper5 .swiper-slide img {
     width: 100%;
-    object-fit: cover;
+    height: 70vh;
+    object-fit: contain;
 }
 
 /* swiper */
