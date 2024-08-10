@@ -17,6 +17,7 @@
         />
         <link rel="stylesheet" href="/assets/fonts/stylesheet.css" />
         <link rel="stylesheet" href="/assets/styles/index.css" />
+        <link rel="stylesheet" href="/assets/styles/responsive.css" />
         <script src="https://cdn.tailwindcss.com"></script>
         <link
             rel="stylesheet"
@@ -61,32 +62,21 @@
         </div>
         <!-- Modal -->
         <header>
-            <nav
-                class="navbar navbar-expand-lg bg-white shadow absolute top-0 z-10 w-100"
-            >
-                <div class="container-fluid container p-0">
-                    <a class="navbar-brand" href="/index.html"
-                        ><img
+            <div class="bg-white absolute top-0 z-10 w-[100%] py-[20px] shadow">
+                <div
+                    class="container-fluid container p-0 flex items-center justify-between"
+                >
+                    <a class="navbar-brand" href="/">
+                        <img
                             src="/assets/icons/logo-dark.svg"
                             alt="logo"
                             class="w-[150px] h-[50px]"
-                    /></a>
-                    <button
-                        class="navbar-toggler"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent"
-                        aria-expanded="false"
-                        aria-label="Toggle navigation"
-                    >
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        />
+                    </a>
                     <div
-                        class="collapse navbar-collapse"
-                        id="navbarSupportedContent"
+                        class="container px-[30px] py-0 flex justify-between header-desktop"
                     >
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+                        <ul class="me-auto mb-2 mb-lg-0 gap-3 mb-4 flex">
                             <li class="nav-item">
                                 <a
                                     class="active regular text-xs"
@@ -155,7 +145,9 @@
                                             >Another action</a
                                         >
                                     </li>
-                                    <li><hr class="dropdown-divider" /></li>
+                                    <li>
+                                        <hr class="dropdown-divider" />
+                                    </li>
                                     <li>
                                         <a
                                             class="dropdown-item regular text-xs"
@@ -167,8 +159,123 @@
                             </li>
                         </ul>
                     </div>
+                    <div
+                        class="offcanvas offcanvas-end bg-[rgba(0,0,0,0.7)]"
+                        tabindex="-1"
+                        id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel"
+                    >
+                        <div class="offcanvas-header">
+                            <button
+                                type="button"
+                                class="btn-close bg-white"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"
+                            ></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="gap-4 mb-4 text-center">
+                                <li class="nav-item">
+                                    <a
+                                        class="active regular text-xs text-white"
+                                        aria-current="page"
+                                        href="/pages/about-us.html"
+                                    >
+                                        О торговом центре
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="regular text-xs text-white"
+                                        href="/pages/rooms-single.html"
+                                    >
+                                        Етажы
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        class="regular text-xs text-white"
+                                        href="/pages/news.html"
+                                    >
+                                        Новости
+                                    </a>
+                                </li>
+                                <li class="nav-item mb-2">
+                                    <a
+                                        class="regular text-xs text-white"
+                                        href="/pages/contacts.html"
+                                    >
+                                        Контакты
+                                    </a>
+                                </li>
+                                <li class="nav-item flex flex-col">
+                                    <a
+                                        class="regular text-xs text-white mb-2"
+                                        href="#"
+                                    >
+                                        +998 (93) 840-88-88
+                                    </a>
+                                    <a
+                                        class="regular text-xs text-white"
+                                        href="#"
+                                    >
+                                        <span class="text-primary">@</span>
+                                        stroymart.info@gmail.com
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="text-center">
+                                <li class="nav-item dropdown">
+                                    <button
+                                        class="dropdown-toggle regular text-xs btn bg-secondary text-white"
+                                        data-bs-toggle="dropdown"
+                                        aria-expanded="false"
+                                        type="button"
+                                    >
+                                        Language
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-end">
+                                        <li>
+                                            <a
+                                                class="dropdown-item regular text-xs"
+                                                href="#"
+                                                >Action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item regular text-xs"
+                                                href="#"
+                                                >Another action</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider" />
+                                        </li>
+                                        <li>
+                                            <a
+                                                class="dropdown-item regular text-xs"
+                                                href="#"
+                                                >Something else here</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a
+                        title="menu"
+                        data-bs-toggle="offcanvas"
+                        href="#offcanvasExample"
+                        role="button"
+                        aria-controls="offcanvasExample"
+                        class="mr-[30px] menu-button"
+                    >
+                        <i class="bi bi-list text-3xl text-black"></i>
+                    </a>
                 </div>
-            </nav>
+            </div>
         </header>
 
         <section>
@@ -564,7 +671,9 @@
         <footer>
             <div class="background">
                 <div class="container">
-                    <div class="flex justify-between">
+                    <div
+                        class="flex justify-between gap-8 footer-links-wrapper"
+                    >
                         <div>
                             <p class="regular w-[160px]">
                                 <span class="bold relative"
@@ -602,10 +711,8 @@
                                 09:00 - 18:00 ПН-ПТ
                             </p>
                         </div>
-                        <div class="w-[160px] relative">
-                            <div
-                                class="shadow-item absolute -left-[50px] -top-[105px]"
-                            >
+                        <div class="relative contacts-form-wrapper">
+                            <div class="shadow-item contact-form">
                                 <p class="bold mb-[20px]">Обратная связь</p>
                                 <input
                                     type="text"
@@ -633,13 +740,13 @@
                     </div>
                     <div class="flex gap-3 mt-10">
                         <i
-                            class="bi bi-telegram text-2xl text-primary cursor-pointer"
+                            class="bi bi-telegram text-2xl text-[#1c92d2] cursor-pointer"
                         ></i>
                         <i
-                            class="bi bi-instagram text-2xl text-primary cursor-pointer"
+                            class="bi bi-instagram text-2xl text-transparent bg-clip-text bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045] cursor-pointer"
                         ></i>
                         <i
-                            class="bi bi-facebook text-2xl text-primary cursor-pointer"
+                            class="bi bi-facebook text-2xl text-[#3b5998] cursor-pointer"
                         ></i>
                     </div>
                 </div>

@@ -206,14 +206,19 @@
     transition-timing-function: linear !important;
     transition-delay: 0ms !important;
 }
-.swiper3 .mySwiper .swiper-slide {
+.swiper3 .swiper-slide {
     width: 256px !important;
-    height: 132px !important;
+    height: 102px !important;
 }
 .swiper3 {
     overflow: hidden;
-    margin: -50px;
     padding: 50px;
+}
+
+.swiper3 .swiper-slide img {
+    width: 256px;
+    height: 102px;
+    object-fit: contain;
 }
 
 .mySwiper4 .swiper-wrapper {
@@ -301,4 +306,12 @@
 /* video */
 .border-dashed-overlay {
     border: dashed !important;
+}
+
+.menu-button {
+    display: none;
+}
+
+.contact-form {
+    width: 260px;
 }
