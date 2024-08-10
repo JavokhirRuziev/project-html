@@ -342,3 +342,10 @@
     position: relative;
     flex-wrap: wrap;
 }
+
+.number-items {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    gap: 8px;
+}
