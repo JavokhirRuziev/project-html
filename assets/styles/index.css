@@ -315,3 +315,30 @@
 .contact-form {
     width: 260px;
 }
+
+#video-wrapper {
+    position: absolute;
+    left: 200px;
+}
+
+.large-text {
+    font-size: 216px;
+}
+
+.inner-text {
+    position: absolute;
+    top: 100px;
+    left: 25%;
+    font-size: 27px;
+    width: 100px;
+}
+
+.video-container {
+    display: flex;
+    column-gap: 300px;
+    row-gap: 250px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
