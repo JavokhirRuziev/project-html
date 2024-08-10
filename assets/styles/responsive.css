@@ -18,6 +18,27 @@
     .video-container {
         flex-direction: column;
     }
+    .video-overlay-play {
+        overflow: auto;
+        height: 650px;
+        border: none;
+        left: -20px;
+        top: 0px;
+        position: absolute;
+        border-radius: 0px;
+        width: 100vw;
+        max-width: 1440px;
+    }
+    #close {
+        top: -30px !important;
+    }
+}
+@media (max-width: 1500px) {
+    #close {
+        position: absolute;
+        top: -70px;
+        right: -15px;
+    }
 }
 
 @media (max-width: 990px) {
@@ -55,6 +76,9 @@
         position: absolute;
         left: 0px;
         top: 20px;
+    }
+    #video {
+        height: 220px;
     }
     .large-text {
         font-size: 106px;
@@ -99,5 +123,8 @@
     .number-items div {
         font-size: 40px;
         margin-bottom: 8px;
+    }
+    #close {
+        top: -20px !important;
     }
 }

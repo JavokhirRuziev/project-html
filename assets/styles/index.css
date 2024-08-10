@@ -294,13 +294,18 @@
     overflow: auto;
     height: 650px;
     border: none;
-    left: 0;
-    right: 10;
+    left: -20px;
     top: -100px;
     position: absolute;
     border-radius: 0px;
     width: 100vw;
     max-width: 1440px;
+}
+
+#close {
+    position: absolute;
+    top: -70px;
+    right: -45px;
 }
 
 /* video */
@@ -319,6 +324,10 @@
 #video-wrapper {
     position: absolute;
     left: 200px;
+}
+
+#video {
+    height: 650px;
 }
 
 .large-text {

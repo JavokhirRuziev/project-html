@@ -297,7 +297,7 @@
                                             id="video"
                                             src="/assets/videos/1622112212.mp4"
                                             controls
-                                            class="absolute top-0 bottom-0 right-0 left-0 w-[100%] h-[650px] bg-primary z-[-1]"
+                                            class="absolute top-0 bottom-0 right-0 left-0 w-[100%] bg-primary z-[-1]"
                                         ></video>
                                     </div>
                                     <div
@@ -320,7 +320,7 @@
                             <div></div>
                             <i
                                 id="close"
-                                class="bi bi-x-square-fill absolute top-[-70px] right-[-45px] cursor-pointer text-danger text-2xl hidden z-10"
+                                class="bi bi-x-square-fill cursor-pointer text-danger text-2xl hidden z-10"
                             ></i>
 
                             <div class="w-[100%] max-w-[600px]">
@@ -793,6 +793,7 @@
                     videoBorder.style = 'border: none !important;';
                     tooltip.style = 'display: none;';
                     wrapper.style = 'left:0px;';
+                    play.style = 'display:none';
                     setTimeout(() => {
                         video.play();
                     }, 1000);
@@ -803,6 +804,7 @@
                 video.pause();
                 close.classList.add('hidden');
                 videoContainer.classList.remove('video-overlay-play');
+
                 if (window.innerWidth < 980) {
                     wrapper.style = 'left:0px;';
                 } else {
@@ -812,6 +814,7 @@
                     tooltip.style = 'display: block;';
                     videoBorder.style = 'border: 2px dashed black;';
                     video.style = 'z-index: -1;';
+                    play.style = 'display:block';
                 }, 900);
             });
         </script>
