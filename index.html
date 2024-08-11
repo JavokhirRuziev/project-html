@@ -51,6 +51,11 @@
                             />
                             <input
                                 type="text"
+                                placeholder="Ваш email"
+                                class="input-base"
+                            />
+                            <input
+                                type="text"
                                 placeholder="Как вас зовут?"
                                 class="input-base w-[100%]"
                             />
@@ -68,7 +73,7 @@
         <!-- Modal -->
 
         <header>
-            <div class="bg-transparent absolute top-0 z-10 w-[100%] py-[20px]">
+            <div class="bg-transparent absolute top-0 z-10 w-[100%] py-[15px]">
                 <div
                     class="container-fluid container p-0 flex items-center justify-between"
                 >
@@ -76,7 +81,7 @@
                         <img
                             src="/assets/icons/logo.svg"
                             alt="logo"
-                            class="w-[150px] h-[50px]"
+                            class="w-[190px] h-[70px]"
                         />
                     </a>
                     <div
@@ -85,7 +90,7 @@
                         <ul class="me-auto mb-2 mb-lg-0 gap-3 mb-4 flex">
                             <li class="nav-item">
                                 <a
-                                    class="active regular text-xs text-white"
+                                    class="regular text-[16px] text-white"
                                     aria-current="page"
                                     href="/pages/about-us.html"
                                 >
@@ -94,15 +99,15 @@
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="regular text-xs text-white"
+                                    class="regular text-[16px] text-white"
                                     href="/pages/rooms-single.html"
                                 >
-                                    Етажы
+                                    Етажи
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="regular text-xs text-white"
+                                    class="regular text-[16px] text-white"
                                     href="/pages/news.html"
                                 >
                                     Новости
@@ -110,26 +115,17 @@
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="regular text-xs text-white"
+                                    class="regular text-[16px] text-white"
                                     href="/pages/contacts.html"
                                 >
                                     Контакты
-                                </a>
-                            </li>
-                            <li class="nav-item flex flex-col">
-                                <a class="regular text-xs text-white" href="#">
-                                    +998 (93) 840-88-88
-                                </a>
-                                <a class="regular text-xs text-white" href="#">
-                                    <span class="text-primary">@</span>
-                                    stroymart.info@gmail.com
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li class="nav-item dropdown">
                                 <button
-                                    class="dropdown-toggle regular text-xs btn bg-secondary text-white"
+                                    class="dropdown-toggle regular text-[16px] btn bg-secondary text-white"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                     type="button"
@@ -183,7 +179,7 @@
                             <ul class="gap-4 mb-4 text-center">
                                 <li class="nav-item">
                                     <a
-                                        class="active regular text-xs text-white"
+                                        class="active regular text-[16px] text-white"
                                         aria-current="page"
                                         href="/pages/about-us.html"
                                     >
@@ -192,15 +188,15 @@
                                 </li>
                                 <li class="nav-item">
                                     <a
-                                        class="regular text-xs text-white"
+                                        class="regular text-[16px] text-white"
                                         href="/pages/rooms-single.html"
                                     >
-                                        Етажы
+                                        Етажи
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a
-                                        class="regular text-xs text-white"
+                                        class="regular text-[16px] text-white"
                                         href="/pages/news.html"
                                     >
                                         Новости
@@ -208,32 +204,17 @@
                                 </li>
                                 <li class="nav-item mb-2">
                                     <a
-                                        class="regular text-xs text-white"
+                                        class="regular text-[16px] text-white"
                                         href="/pages/contacts.html"
                                     >
                                         Контакты
-                                    </a>
-                                </li>
-                                <li class="nav-item flex flex-col">
-                                    <a
-                                        class="regular text-xs text-white mb-2"
-                                        href="#"
-                                    >
-                                        +998 (93) 840-88-88
-                                    </a>
-                                    <a
-                                        class="regular text-xs text-white"
-                                        href="#"
-                                    >
-                                        <span class="text-primary">@</span>
-                                        stroymart.info@gmail.com
                                     </a>
                                 </li>
                             </ul>
                             <ul class="text-center">
                                 <li class="nav-item dropdown">
                                     <button
-                                        class="dropdown-toggle regular text-xs btn bg-secondary text-white"
+                                        class="dropdown-toggle regular text-[16px] btn bg-secondary text-white"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                         type="button"
@@ -366,7 +347,7 @@
                 </h1>
 
                 <div class="flex flex-wrap gap-4 justify-center">
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-buildings-fill text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -377,7 +358,7 @@
                             Торговый центр нового формата
                         </p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-rulers text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -386,7 +367,7 @@
                         </div>
                         <p class="text-md medium">Общая площадь</p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-geo-fill text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -395,7 +376,7 @@
                         </div>
                         <p class="text-md medium">Удобная локация</p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-houses-fill text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -404,7 +385,7 @@
                         </div>
                         <p class="text-md medium">Склад на территории</p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-gear-wide-connected text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -415,7 +396,7 @@
                             Широкий ассортимент строительных материалов
                         </p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-p-square-fill text-5xl"></i>
 
@@ -427,7 +408,7 @@
                             Большая парковка на 600 авто
                         </p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-kanban-fill text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -436,7 +417,7 @@
                         </div>
                         <p class="text-md medium">Грамотный менеджмент</p>
                     </div>
-                    <div class="shadow w-[300px] shadow-item">
+                    <div class="shadow w-[300px] shadow-item-hover">
                         <div class="flex gap-3 items-center mb-[25px]">
                             <i class="bi bi-badge-ad-fill text-5xl"></i>
                             <h6 class="mb-1 text-3xl bold text-secondary">
@@ -657,11 +638,11 @@
         <section>
             <div class="container">
                 <div
-                    class="h-[auto] p-10 rounded-2xl flex gap-6 flex-wrap justify-between items-center overflow-hidden mb-10 bg-primary"
+                    class="h-[auto] p-10 rounded-2xl flex gap-6 flex-wrap justify-between items-center overflow-hidden mb-10 bg-primary relative cursor-tracking"
                 >
                     <div>
                         <h2 class="bold text-secondary text-xl mb-2">
-                            Выберите помещение на интерактивной карте этажей
+                            Выберите помещение на слайдере этажей
                         </h2>
                         <p class="text-sm text-secondary">
                             Вы сможете ознакомится со всеми помещениями
@@ -1017,62 +998,19 @@
             </div>
         </footer>
 
+        <!-- contacts-button -->
+        <div
+            class="fixed bottom-[30px] right-[30px] rounded-full z-50 cursor-pointer contact-icon"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+        >
+            <i class="Phone is-animating"></i>
+        </div>
+        <!-- contacts-button -->
+
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
         <script src="/fslightbox-basic-3.4.1/fslightbox.js"></script>
-        <script type="module">
-            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
-
-            const swiper1 = new Swiper('.swiper1', {
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-                grabCursor: true,
-                effect: 'fade',
-                lazy: true,
-            });
-
-            const swiper2 = new Swiper('.swiper2', {
-                effect: 'coverflow',
-                grabCursor: true,
-                spaceBetween: 70,
-                centeredSlides: true,
-                slidesPerView: 'auto',
-                coverflowEffect: {
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                },
-                pagination: {
-                    el: '.swiper-pagination',
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: '.swiper-button-next',
-                    prevEl: '.swiper-button-prev',
-                },
-                initialSlide: 1,
-                loop: true,
-                lazy: true,
-            });
-
-            const swiper3 = new Swiper('.swiper3', {
-                slidesPerView: 5,
-                spaceBetween: 30,
-                grabCursor: true,
-                freeMode: true,
-                autoplay: {
-                    delay: 0,
-                    disableOnInteraction: false,
-                },
-                loop: true,
-                speed: 2000,
-                lazy: true,
-            });
-        </script>
+        <script src="/javascript/index.js" type="module"></script>
     </body>
 </html>

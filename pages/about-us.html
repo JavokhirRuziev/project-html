@@ -46,6 +46,11 @@
                             />
                             <input
                                 type="text"
+                                placeholder="Ваш email"
+                                class="input-base"
+                            />
+                            <input
+                                type="text"
                                 placeholder="Как вас зовут?"
                                 class="input-base w-[100%]"
                             />
@@ -62,7 +67,7 @@
         </div>
         <!-- Modal -->
         <header>
-            <div class="bg-white absolute top-0 z-10 w-[100%] py-[20px] shadow">
+            <div class="bg-white absolute top-0 z-10 w-[100%] py-[15px] shadow">
                 <div
                     class="container-fluid container p-0 flex items-center justify-between"
                 >
@@ -70,7 +75,7 @@
                         <img
                             src="/assets/icons/logo-dark.svg"
                             alt="logo"
-                            class="w-[150px] h-[50px]"
+                            class="w-[190px] h-[70px]"
                         />
                     </a>
                     <div
@@ -79,7 +84,7 @@
                         <ul class="me-auto mb-2 mb-lg-0 gap-3 mb-4 flex">
                             <li class="nav-item">
                                 <a
-                                    class="active regular text-xs"
+                                    class="regular text-[16px] text-black"
                                     aria-current="page"
                                     href="/pages/about-us.html"
                                 >
@@ -88,15 +93,15 @@
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="regular text-xs text-black"
+                                    class="regular text-[16px] text-black"
                                     href="/pages/rooms-single.html"
                                 >
-                                    Етажы
+                                    Етажи
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="regular text-xs"
+                                    class="regular text-[16px] text-black"
                                     href="/pages/news.html"
                                 >
                                     Новости
@@ -104,26 +109,17 @@
                             </li>
                             <li class="nav-item">
                                 <a
-                                    class="regular text-xs"
+                                    class="regular text-[16px] text-black"
                                     href="/pages/contacts.html"
                                 >
                                     Контакты
-                                </a>
-                            </li>
-                            <li class="nav-item flex flex-col">
-                                <a class="regular text-xs" href="#">
-                                    +998 (93) 840-88-88
-                                </a>
-                                <a class="regular text-xs" href="#">
-                                    <span class="text-primary">@</span>
-                                    stroymart.info@gmail.com
                                 </a>
                             </li>
                         </ul>
                         <ul>
                             <li class="nav-item dropdown">
                                 <button
-                                    class="dropdown-toggle regular text-xs btn bg-secondary text-white"
+                                    class="dropdown-toggle regular text-[16px] btn bg-secondary text-white"
                                     data-bs-toggle="dropdown"
                                     aria-expanded="false"
                                     type="button"
@@ -177,7 +173,7 @@
                             <ul class="gap-4 mb-4 text-center">
                                 <li class="nav-item">
                                     <a
-                                        class="active regular text-xs text-white"
+                                        class="active regular text-[16px] text-black"
                                         aria-current="page"
                                         href="/pages/about-us.html"
                                     >
@@ -186,15 +182,15 @@
                                 </li>
                                 <li class="nav-item">
                                     <a
-                                        class="regular text-xs text-white"
+                                        class="regular text-[16px] text-black"
                                         href="/pages/rooms-single.html"
                                     >
-                                        Етажы
+                                        Етажи
                                     </a>
                                 </li>
                                 <li class="nav-item">
                                     <a
-                                        class="regular text-xs text-white"
+                                        class="regular text-[16px] text-black"
                                         href="/pages/news.html"
                                     >
                                         Новости
@@ -202,32 +198,17 @@
                                 </li>
                                 <li class="nav-item mb-2">
                                     <a
-                                        class="regular text-xs text-white"
+                                        class="regular text-[16px] text-black"
                                         href="/pages/contacts.html"
                                     >
                                         Контакты
-                                    </a>
-                                </li>
-                                <li class="nav-item flex flex-col">
-                                    <a
-                                        class="regular text-xs text-white mb-2"
-                                        href="#"
-                                    >
-                                        +998 (93) 840-88-88
-                                    </a>
-                                    <a
-                                        class="regular text-xs text-white"
-                                        href="#"
-                                    >
-                                        <span class="text-primary">@</span>
-                                        stroymart.info@gmail.com
                                     </a>
                                 </li>
                             </ul>
                             <ul class="text-center">
                                 <li class="nav-item dropdown">
                                     <button
-                                        class="dropdown-toggle regular text-xs btn bg-secondary text-white"
+                                        class="dropdown-toggle regular text-[16px] btn bg-secondary text-white"
                                         data-bs-toggle="dropdown"
                                         aria-expanded="false"
                                         type="button"
@@ -279,7 +260,7 @@
         </header>
 
         <section>
-            <div class="background mt-[76px]">
+            <div class="background mt-[100px]">
                 <div class="container">
                     <div>
                         <div class="video-container">
@@ -745,6 +726,16 @@
                 </div>
             </div>
         </footer>
+
+        <!-- contacts-button -->
+        <div
+            class="fixed bottom-[30px] right-[30px] rounded-full z-50 cursor-pointer contact-icon"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+        >
+            <i class="Phone is-animating"></i>
+        </div>
+        <!-- contacts-button -->
 
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script src="/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
