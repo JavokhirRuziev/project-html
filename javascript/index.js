@@ -50,3 +50,13 @@ const swiper3 = new Swiper('.swiper3', {
     speed: 2000,
     lazy: true,
 });
+
+$(document).ready(function () {
+    $('.switch-tab-selector').on('click', function () {
+        const targetTab = $(this).data('switch-tab');
+        $('.type-premises').hide();
+        $('#' + targetTab).show();
+        $('.switch-tab-selector').removeClass('active');
+        $(this).addClass('active');
+    });
+});
