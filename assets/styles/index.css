@@ -213,7 +213,8 @@
 .swiper3 {
     overflow: hidden;
     padding: 100px;
-    margin: -20px 0px;
+    margin: -20px auto;
+    max-width: 1500px;
 }
 
 .swiper3 .swiper-slide img {
