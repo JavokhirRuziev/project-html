@@ -330,7 +330,7 @@
                             <p
                                 class="text-primary bold text-center relative large-text"
                             >
-                                39 000
+                                <span id="number">0</span>
                                 <span class="medium text-secondary inner-text">
                                     общая площадь
                                 </span>
@@ -807,6 +807,28 @@
                     video.style = 'z-index: -1;';
                     play.style = 'display:block';
                 }, 900);
+            });
+
+            document.addEventListener('DOMContentLoaded', () => {
+                const targetNumber = 39000;
+                const duration = 3000;
+                const frameRate = 60;
+                const increment =
+                    targetNumber / (duration / (1000 / frameRate));
+
+                let currentNumber = 0;
+                const numberElement = document.getElementById('number');
+
+                const interval = setInterval(() => {
+                    currentNumber += increment;
+
+                    if (currentNumber >= targetNumber) {
+                        currentNumber = targetNumber;
+                        clearInterval(interval);
+                    }
+
+                    numberElement.textContent = Math.floor(currentNumber);
+                }, 1000 / frameRate);
             });
         </script>
     </body>
